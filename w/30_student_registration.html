@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            background-color: #ffe5e0;
+            font-family: Arial;
+        }
+
+        form {
+            width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Times New Roman";
+        }
+
+        label {
+            display: inline-block;
+            width: 130px;
+            margin: 8px;
+        }
+
+        input, select, textarea {
+            padding: 5px;
+        }
+
+        textarea {
+            width: 315px;
+            height: 60px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form>
+
+    <label>Roll no.:</label>
+    <input type="text"
+           pattern="[0-9]+"
+           required>
+    <br>
+
+    <label>Student name:</label>
+    <input type="text"
+           placeholder="First Name"
+           required>
+
+    <input type="text"
+           placeholder="Last Name"
+           required>
+    <br>
+
+    <label>Father's name:</label>
+    <input type="text" required>
+    <br>
+
+    <label>Date of birth:</label>
+    <input type="date" required>
+    <br>
+
+    <label>Mobile no.:</label>
+    <input type="tel"
+           value="+91"
+           size="3"
+           readonly>
+
+    <input type="tel"
+           pattern="[0-9]{10}"
+           maxlength="10"
+           required>
+    <br>
+
+    <label>Email id:</label>
+    <input type="email" required>
+    <br>
+
+    <label>Password:</label>
+    <input type="password"
+           minlength="8"
+           required>
+    <br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" required> Male
+    <input type="radio" name="gender"> Female
+    <br>
+
+    <label>Department:</label>
+    <input type="checkbox"> CSE
+    <input type="checkbox"> IT
+    <input type="checkbox"> ECE
+    <input type="checkbox"> Civil
+    <input type="checkbox"> Mech
+    <br>
+
+    <label>Course:</label>
+    <select required>
+        <option value="">Select Current Course</option>
+        <option>BCA</option>
+        <option>B.Sc</option>
+        <option>BBA</option>
+        <option>BE</option>
+        <option>MCA</option>
+    </select>
+    <br>
+
+    <label>Student photo:</label>
+    <input type="file" accept="image/*">
+    <br>
+
+    <label>City:</label>
+    <input type="text" required>
+    <br>
+
+    <label>Address:</label>
+    <textarea required></textarea>
+    <br>
+
+    <div class="buttons">
+        <input type="submit" value="Register">
+    </div>
+
+</form>
+
+</body>
+</html>
